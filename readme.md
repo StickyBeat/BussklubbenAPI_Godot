@@ -5,9 +5,11 @@ Ett API för Godot som kan kommunicera med Bussklubben och wrappar spelet med Bu
 ## Installation
 
 Börja med att ladda ned detta repo:t och placera det i _"addons"_ -mappen i ditt Godot-projekt
+
 ![Screenshot 2024-12-04 at 11 12 33](https://github.com/user-attachments/assets/b0a2b196-4c96-499a-b0db-d84e49341c55)
 
 Gå in i _"Project"_ -> _"Project Settings"_ -> _"Plugins"_ och bocka i _"Bussklubben API"_
+
 ![Screenshot 2024-12-04 at 11 13 22](https://github.com/user-attachments/assets/068e04df-7bb7-4ef6-9e69-13be61352352)
 
 
