@@ -5,10 +5,11 @@ Ett API för Godot som kan kommunicera med Bussklubben och wrappar spelet med Bu
 ## Installation
 
 Börja med att ladda ned detta repo:t och placera det i _"addons"_ -mappen i ditt Godot-projekt
-BILD
+![Screenshot 2024-12-04 at 11 12 33](https://github.com/user-attachments/assets/b0a2b196-4c96-499a-b0db-d84e49341c55)
 
 Gå in i _"Project"_ -> _"Project Settings"_ -> _"Plugins"_ och bocka i _"Bussklubben API"_
-BILD
+![Screenshot 2024-12-04 at 11 13 22](https://github.com/user-attachments/assets/068e04df-7bb7-4ef6-9e69-13be61352352)
+
 
 ## Implementation
 
@@ -21,15 +22,15 @@ I detta API finns fyra statiska funktioner som bör implementeras
 
 ### game_loaded
 
-Anropa ´BussklubbenAPI.game_loaded()´ när spelet har laddat färdigt och är redo. Detta döljer laddskärmen som html-wrappern kommer att visa när spelet är exporterat.
+Anropa `BussklubbenAPI.game_loaded()` när spelet har laddat färdigt och är redo. Detta döljer laddskärmen som html-wrappern kommer att visa när spelet är exporterat.
 
 ### set_score
 
-Använd ´BussklubbenAPI.set_score(int)´ för att meddela API:t vad spelaren har för poäng.
+Använd `BussklubbenAPI.set_score(int)` för att meddela API:t vad spelaren har för poäng.
 
 ### game_done
 
-Anropa ´BussklubbenAPI.game_done()´ när spelaren har vunnit eller förlorat, och highscore-listan ska visas.
+Anropa `BussklubbenAPI.game_done()` när spelaren har vunnit eller förlorat, och highscore-listan ska visas.
 
 ### register_restart
 
@@ -72,4 +73,4 @@ När du sedan väljer att exportera projektet kommer alla filer som behövs för
 
 För att kunna testa spelet med Bussklubbens interface måste spelet exporteras. Funktionen _"Run in browser"_ i Godot fungerar inte med Bussklubbens externa script.
 
-När du väl exporterat filerna rekommenderas [http-server](https://www.npmjs.com/package/http-server) för att hosta en webbserver lokalt för att testa spelet med. Normalt sett hostar den till adressen _"localhost:8080"_.
+När du väl exporterat filerna rekommenderas [http-server](https://www.npmjs.com/package/http-server) för att hosta en webbserver lokalt för att testa spelet med. Normalt sett hostar den till adressen *localhost:8080*.
